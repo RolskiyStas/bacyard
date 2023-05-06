@@ -19,6 +19,10 @@
 				<div class="header__inner">
 					<a class="logo" href=""><img class="logo__img" src="./images/logo.svg" alt=""></a>
 					<nav class="menu">
+						<input class="menu__toggle" id="menu__toggle" type="checkbox" />
+						<label class="menu__btn" for="menu__toggle">
+							<span></span>
+						</label>
 						<ul class="menu__list">
 							<li class="menu__list-item">
 								<a href="#" class="menu__list-link">Послуги</a>
@@ -62,15 +66,15 @@
 		</header>
 
 		<main class="main">
+
 			<section class="hero">
 				<div class="container">
 					<div class="hero__inner">
-						<h1 class="hero__title">Компанія <span>правильних рішень</span> для вашої ділянки</h1>
-						<a class="hero__btn btn" href="#">Дивитися докладніше</a>
+						<h1 class="hero__title">Компанія <br><span>правильних рішень</span> <br> для вашої ділянки</h1>
+						<a class="btn hero__btn " href="#">Дивитися докладніше</a>
 					</div>
 				</div>
 			</section>
-
 			<section class="greet">
 				<div class="container">
 					<div class="greet__inner">
@@ -108,6 +112,7 @@
 				</div>
 			</section>
 
+
 			<section class="video">
 				<div class="container">
 					<div class="video__inner">
@@ -116,24 +121,25 @@
 							<img src="./images/video.jpg" alt="">
 						</div>
 					</div>
-
 				</div>
 			</section>
 
 			<section class="departure">
-				<div class="container">
-					<div class="departure__title title">Приїду безкоштовно на ваш об’єкт</div>
-					<div class="departure__inner">
-						<form class="departure__form" action="#">
-							<p>для детального прорахунку та консультації</p>
-							<div class="departure__form-container">
-								<div class="departure__form-content">
-									<input type="text" placeholder="Ім’я" name="uname" required>
-									<input type="text" placeholder="Телефон" name="psw" required>
+				<div class="container-big">
+					<div class="container">
+						<div class="departure__title title">Приїду безкоштовно на ваш об’єкт</div>
+						<div class="departure__inner">
+							<form class="departure__form" action="#">
+								<p>для детального прорахунку та консультації</p>
+								<div class="departure__form-container">
+									<div class="departure__form-content">
+										<input type="text" placeholder="Ім’я" name="uname" required>
+										<input type="text" placeholder="Телефон" name="psw" required>
+									</div>
+									<button class="departure__form-btn btn" type="submit">Докладніше</button>
 								</div>
-								<button class="departure__form-btn btn" type="submit">Докладніше</button>
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -161,7 +167,7 @@
 							<li class="steps__list-item">
 								<p class="steps__list-num">3</p>
 								<div class="steps__list-content">
-									<h4 class="steps__list-title">Зустрічаємось для вибору матеріалів</h4>
+									<h4 class="steps__list-title">Зустріч</h4>
 									<p class="steps__list-text">та обговорення деталей у нашому затишному офісі</p>
 								</div>
 							</li>
@@ -185,31 +191,29 @@
 			<section class="calc">
 				<div class="container">
 					<h3 class="calc__title title">Швидкий прорахунок вашої тераси</h3>
-					<div class="calc__content">
-						<form class="calc__form" action="#">
-							<div class="calc__form-inner">
-								<div class="calc__form-item">
-									<label for="farea">Площа (м²)</label>
-									<input class="calc__form-area" type="text" id="farea">
-								</div>
-								<div class="calc__form-item">
-									<label for="fprice">Ціна</label>
-									<select class="calc__form-price" name="calc" id="fprice">
-										<option value=""></option>
-										<option value="dog">1</option>
-										<option value="cat">2</option>
-										<option value="hamster">3</option>
-										<option value="parrot">4</option>
-									</select>
-								</div>
-								<div class="calc__form-item">
-									<label for="fphone">Телефон</label>
-									<input class="calc__form-phone" type="number" id="fphone">
-								</div>
+					<form class="calc__form" action="#">
+						<div class="calc__form-inner">
+							<div class="calc__form-item">
+								<label for="farea">Площа (м²)</label>
+								<input class="calc__form-area" type="text" id="farea">
 							</div>
-							<input class="calc__form-btn btn" type="submit" value="Розрахувати">
-						</form>
-					</div>
+							<div class="calc__form-item">
+								<label for="fprice">Ціна</label>
+								<select class="calc__form-price" name="calc" id="fprice">
+									<option value=""></option>
+									<option value="dog">1</option>
+									<option value="cat">2</option>
+									<option value="hamster">3</option>
+									<option value="parrot">4</option>
+								</select>
+							</div>
+							<div class="calc__form-item">
+								<label for="fphone">Телефон</label>
+								<input class="calc__form-phone" type="number" id="fphone">
+							</div>
+						</div>
+						<input class="calc__form-btn btn" type="submit" value="Розрахувати">
+					</form>
 				</div>
 			</section>
 
@@ -255,19 +259,21 @@
 			</section>
 
 			<section class="type">
-				<h3 class="type__title title">ВИДИ ТЕРАСНОЇ ДОШКИ</h3>
-				<div class="type__inner">
-					<div class="type__item">
-						<div class="type__item-img">
-							<img src="./images/type1.jpg" alt="">
+				<div class="container-big">
+					<h3 class="type__title title">ВИДИ ТЕРАСНОЇ ДОШКИ</h3>
+					<div class="type__inner">
+						<div class="type__item">
+							<div class="type__item-img">
+								<img src="./images/type1.jpg" alt="">
+							</div>
+							<div class="type__item-subtitle">Композитна терасна дошка</div>
 						</div>
-						<div class="type__item-subtitle">Композитна терасна дошка</div>
-					</div>
-					<div class="type__item">
-						<div class="type__item-img">
-							<img src="./images/type2.jpg" alt="">
+						<div class="type__item">
+							<div class="type__item-img">
+								<img src="./images/type2.jpg" alt="">
+							</div>
+							<div class="type__item-subtitle">Терасна дошка з натуральної деревини</div>
 						</div>
-						<div class="type__item-subtitle">Терасна дошка з натуральної деревини</div>
 					</div>
 				</div>
 			</section>
@@ -280,69 +286,71 @@
 			</section>
 
 			<section class="services">
-				<h3 class="services__title title">ДОДАТКОВІ ПОСЛУГИ</h3>
-				<div class="services__inner">
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services1.jpg" alt="">
+				<div class="container-big">
+					<h3 class="services__title title">ДОДАТКОВІ ПОСЛУГИ</h3>
+					<div class="services__inner">
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services1.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Рулоний газон</div>
 						</div>
-						<div class="services__item-subtitle">Рулоний газон</div>
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services2.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Перговий навіс</div>
+						</div>
 					</div>
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services2.jpg" alt="">
+					<div class="services__inner">
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services3.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Штучний газон</div>
 						</div>
-						<div class="services__item-subtitle">Перговий навіс</div>
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services4.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Автоматичний полив</div>
+						</div>
 					</div>
-				</div>
-				<div class="services__inner">
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services3.jpg" alt="">
+					<div class="services__inner">
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services5.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Ландшафтний дизайн</div>
 						</div>
-						<div class="services__item-subtitle">Штучний газон</div>
 					</div>
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services4.jpg" alt="">
+					<div class="services__inner">
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services6.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Лазні</div>
 						</div>
-						<div class="services__item-subtitle">Автоматичний полив</div>
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services7.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Огорожі</div>
+						</div>
 					</div>
-				</div>
-				<div class="services__inner">
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services5.jpg" alt="">
+					<div class="services__inner">
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services8.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Обслуговування</div>
 						</div>
-						<div class="services__item-subtitle">Ландшафтний дизайн</div>
-					</div>
-				</div>
-				<div class="services__inner">
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services6.jpg" alt="">
+						<div class="services__item">
+							<div class="services__item-img">
+								<img src="./images/services9.jpg" alt="">
+							</div>
+							<div class="services__item-subtitle">Розробка проекту ділянки та візуалізація</div>
 						</div>
-						<div class="services__item-subtitle">Лазні</div>
-					</div>
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services7.jpg" alt="">
-						</div>
-						<div class="services__item-subtitle">Огорожі</div>
-					</div>
-				</div>
-				<div class="services__inner">
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services8.jpg" alt="">
-						</div>
-						<div class="services__item-subtitle">Обслуговування</div>
-					</div>
-					<div class="services__item">
-						<div class="services__item-img">
-							<img src="./images/services8.jpg" alt="">
-						</div>
-						<div class="services__item-subtitle">Розробка проекту ділянки та візуалізація</div>
 					</div>
 				</div>
 			</section>
@@ -353,19 +361,16 @@
 						<h3 class="call__title title">ВИЇЗД НА ОБ’ЄКТ БЕЗКОШТОВНО</h3>
 						<p class="call__subtitle">для детального прорахунку та консультації</p>
 						<div class="call__content">
-							<form class="call__form" action="#">
-								<div class="call__form-container">
-									<div class="call__form-content">
-										<input type="text" placeholder="Ім’я" name="uname" required>
-										<input type="text" placeholder="Телефон" name="psw" required>
-									</div>
-									<p>або телефонуйте +38051509505</p>
-									<button class="call__form-btn btn" type="submit">ЗАМОВИТИ</button>
+							<form class="call__form-container" action="#">
+								<div class="call__form-content">
+									<input type="text" placeholder="Ім’я" name="uname" required>
+									<input type="text" placeholder="Телефон" name="psw" required>
 								</div>
+								<p>або телефонуйте +38051509505</p>
+								<button class="call__form-btn btn" type="submit">ЗАМОВИТИ</button>
 							</form>
 						</div>
 					</div>
-
 				</div>
 			</section>
 
