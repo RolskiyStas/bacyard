@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Document</title>
 </head>
@@ -25,19 +26,19 @@
 						</label>
 						<ul class="menu__list">
 							<li class="menu__list-item">
-								<a href="#" class="menu__list-link">Послуги</a>
+								<a href="#services" class="menu__list-link">Послуги</a>
 							</li>
 							<li class="menu__list-item">
-								<a href="#" class="menu__list-link">Наші роботи</a>
+								<a href="#slider" class="menu__list-link">Наші роботи</a>
 							</li>
 							<li class="menu__list-item">
-								<a href="#" class="menu__list-link">Швидкий прорахунок</a>
+								<a href="#calc" class="menu__list-link">Швидкий прорахунок</a>
 							</li>
 							<li class="menu__list-item">
-								<a href="#" class="menu__list-link">Етапи</a>
+								<a href="#steps" class="menu__list-link">Етапи</a>
 							</li>
 							<li class="menu__list-item">
-								<a href="#" class="menu__list-link">Контакти</a>
+								<a href="#call" class="menu__list-link">Контакти</a>
 							</li>
 						</ul>
 					</nav>
@@ -144,7 +145,7 @@
 				</div>
 			</section>
 
-			<section class="steps">
+			<section class="steps" id="steps">
 				<div class="container">
 					<div class="steps__title title">Етапи розробки веранди</div>
 					<div class="steps__inner">
@@ -155,13 +156,18 @@
 									<h4 class="steps__list-title">Робимо виїзд</h4>
 									<p class="steps__list-text">на об`єкт</p>
 								</div>
-
+								<div class="sale">
+									<span>Безкоштовно</span>
+								</div>
 							</li>
 							<li class="steps__list-item">
 								<p class="steps__list-num">2</p>
 								<div class="steps__list-content">
 									<h4 class="steps__list-title">Робимо креслення</h4>
 									<p class="steps__list-text">та прорахунок дільничих варіантів</p>
+								</div>
+								<div class="sale">
+									<span>Безкоштовно</span>
 								</div>
 							</li>
 							<li class="steps__list-item">
@@ -188,7 +194,7 @@
 				</div>
 			</section>
 
-			<section class="calc">
+			<section class="calc" id="calc">
 				<div class="container">
 					<h3 class="calc__title title">Швидкий прорахунок вашої тераси</h3>
 					<form class="calc__form" action="#">
@@ -278,14 +284,37 @@
 				</div>
 			</section>
 
-			<section class="slider">
+			<section class="slider" id="slider">
 				<div class="container">
 					<h3 class="slider__title title">ГОТОВІ РОБОТИ</h3>
-					<div class="slider__inner"></div>
+					<div class="slider__inner swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slider__item">
+								<img src="./images/services1.jpg" alt="" class="slider__item-img">
+							</div>
+							<div class="swiper-slide slider__item">
+								<img src="./images/services2.jpg" alt="" class="slider__item-img">
+							</div>
+							<div class="swiper-slide slider__item">
+								<img src="./images/services3.jpg" alt="" class="slider__item-img">
+							</div>
+							<div class="swiper-slide slider__item">
+								<img src="./images/services4.jpg" alt="" class="slider__item-img">
+							</div>
+						</div>
+
+						<div class="swiper-button-prev swiper-btn">
+							<img src="./images/prev.png" alt="">
+						</div>
+						<div class="swiper-btn swiper-button-next">
+							<img src="./images/next.png" alt="">
+						</div>
+
+					</div>
 				</div>
 			</section>
 
-			<section class="services">
+			<section class="services" id="services">
 				<div class="container-big">
 					<h3 class="services__title title">ДОДАТКОВІ ПОСЛУГИ</h3>
 					<div class="services__inner">
@@ -355,7 +384,7 @@
 				</div>
 			</section>
 
-			<section class="call">
+			<section class="call" id="call">
 				<div class="container">
 					<div class="call__inner">
 						<h3 class="call__title title">ВИЇЗД НА ОБ’ЄКТ БЕЗКОШТОВНО</h3>
@@ -364,7 +393,7 @@
 							<form class="call__form-container" action="#">
 								<div class="call__form-content">
 									<input type="text" placeholder="Ім’я" name="uname" required>
-									<input type="text" placeholder="Телефон" name="psw" required>
+									<input type="number" placeholder="Телефон" name="psw" required>
 								</div>
 								<p>або телефонуйте +38051509505</p>
 								<button class="call__form-btn btn" type="submit">ЗАМОВИТИ</button>
@@ -424,7 +453,7 @@
 		</footer>
 
 	</div>
-
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
 
