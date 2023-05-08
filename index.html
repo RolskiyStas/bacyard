@@ -8,7 +8,7 @@
 	<link rel="icon" href="images/favicon.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Document</title>
+	<title>Backyard</title>
 </head>
 
 <body>
@@ -197,29 +197,33 @@
 			<section class="calc" id="calc">
 				<div class="container">
 					<h3 class="calc__title title">Швидкий прорахунок вашої тераси</h3>
-					<form class="calc__form" action="#">
+					<form class="calc__form" action="#" id="formCalc">
 						<div class="calc__form-inner">
 							<div class="calc__form-item">
 								<label for="farea">Площа (м²)</label>
-								<input class="calc__form-area" type="text" id="farea">
+								<input class="calc__form-area" type="number" id="numberInput"">
 							</div>
-							<div class="calc__form-item">
+							<div class=" calc__form-item">
 								<label for="fprice">Ціна</label>
-								<select class="calc__form-price" name="calc" id="fprice">
+								<select class="calc__form-price" name="calc" id="planSelect">
 									<option value=""></option>
-									<option value="dog">1</option>
-									<option value="cat">2</option>
-									<option value="hamster">3</option>
-									<option value="parrot">4</option>
+									<option value="2">План 1</option>
+									<option value="4">План 2</option>
+									<option value="6">План 3</option>
+									<option value="8">План 4</option>
 								</select>
 							</div>
 							<div class="calc__form-item">
 								<label for="fphone">Телефон</label>
-								<input class="calc__form-phone" type="number" id="fphone">
+								<input class="calc__form-phone" type="number" id="phoneInput">
 							</div>
 						</div>
-						<input class="calc__form-btn btn" type="submit" value="Розрахувати">
+						<div class="call__subtitle" id="result"></div>
+						<button class="calc__form-btn btn" type="button" onclick="calculate()">Розрахувати</button>
 					</form>
+				</div>
+				<div class="sale">
+					<span>5% від прибутку на допомогу ЗСУ</span>
 				</div>
 			</section>
 
@@ -396,7 +400,7 @@
 									<input type="number" placeholder="Телефон" name="psw" required>
 								</div>
 								<p>або телефонуйте +38051509505</p>
-								<button class="call__form-btn btn" type="submit">ЗАМОВИТИ</button>
+								<button class="call__form-btn btn" type="submit">Замовити консультацію</button>
 							</form>
 						</div>
 					</div>
