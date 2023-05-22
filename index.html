@@ -44,23 +44,24 @@
 					</nav>
 					<ul class="social">
 						<li class="social__list-item">
-							<a href="#" class="social__link">
+							<a href="#" class="social__link" target="_blank">
 								<img src="./images/facebook.png" alt="facebook" class="social__img">
 							</a>
 						</li>
 						<li class="social__list-item">
-							<a href="#" class="social__link">
+							<a href="https://instagram.com/backyard_db?igshid=MzRlODBiNWFlZA==" target="_blank" class="social__link">
 								<img src="./images/insta.png" alt="instagram" class="social__img">
 							</a>
 						</li>
 						<li class="social__list-item">
-							<a href="#" class="social__link">
+							<a href="https://t.me/Mykola_Serhiienko" class="social__link" target="_blank">
 								<img src="./images/telegram.png" alt="telegram" class="social__img">
 							</a>
 						</li>
 					</ul>
 					<div class="header__number">
-						+38(050) 150 95 05 <p>Завжди на зв’язку</p>
+						<a href="tel:+380501509505">+38(050) 150 95 05</a>
+						<p>Завжди на зв’язку</p>
 					</div>
 				</div>
 			</div>
@@ -76,6 +77,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="greet">
 				<div class="container">
 					<div class="greet__inner">
@@ -113,7 +115,6 @@
 				</div>
 			</section>
 
-
 			<section class="video">
 				<div class="container">
 					<div class="video__inner">
@@ -133,21 +134,20 @@
 							<form class="departure__form" action="#">
 								<p>для детального прорахунку та консультації</p>
 								<div class="departure__form-container">
-									<div class="departure__form-content">
-										<input type="text" placeholder="Ім’я" name="uname" required>
-										<input type="text" placeholder="Телефон" name="psw" required>
-									</div>
-									<button class="departure__form-btn btn" type="submit">Докладніше</button>
+									<input type="text" placeholder="Ім’я" name="uname" required>
+									<input type="text" placeholder="Телефон" name="psw" required>
+									<button class="departure__form-btn my-button btn" type="submit">Докладніше</button>
 								</div>
 							</form>
 						</div>
+						<div class="popup">Дякую, ми Вам зателефонуємо найближчим часом.</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="steps">
 				<div class="container">
-					<div class="steps__title title" id="steps">Етапи розробки веранди</div>
+					<div class="steps__title title" id="steps">Етапи виконання проекту</div>
 					<div class="steps__inner">
 						<ol class="steps__list">
 							<li class="steps__list-item">
@@ -204,22 +204,22 @@
 								<input class="calc__form-area" type="number" id="numberInput"">
 							</div>
 							<div class=" calc__form-item">
-								<label for="fprice">Ціна</label>
+								<label for="fprice">Категорія</label>
 								<select class="calc__form-price" name="calc" id="planSelect">
 									<option value=""></option>
-									<option value="2">План 1</option>
-									<option value="4">План 2</option>
-									<option value="6">План 3</option>
-									<option value="8">План 4</option>
+									<option value="75">Бюджетна</option>
+									<option value="110">Стандарт</option>
+									<option value="130">Преміум</option>
+									<option value="155">Еліт</option>
 								</select>
 							</div>
 							<div class="calc__form-item">
 								<label for="fphone">Телефон</label>
 								<input class="calc__form-phone" type="number" id="phoneInput">
+								<button class="calc__form-btn btn" type="button" onclick="calculate()">Розрахувати</button>
 							</div>
 						</div>
 						<div class="call__subtitle" id="result"></div>
-						<button class="calc__form-btn btn" type="button" onclick="calculate()">Розрахувати</button>
 					</form>
 				</div>
 				<div class="sale">
@@ -273,16 +273,46 @@
 					<h3 class="type__title title">ВИДИ ТЕРАСНОЇ ДОШКИ</h3>
 					<div class="type__inner">
 						<div class="type__item">
-							<div class="type__item-img">
-								<img src="./images/type1.jpg" alt="">
+							<img class="type__item-img" src="./images/type1.jpg" alt="">
+							<h3 class="type__item-subtitle hidden-title">Композитна терасна дошка</h3>
+							<div class="type__item-text hidden content">
+								<h4>Композитна терасна дошка</h4>
+								<p>Така терасна дошка виконана з
+									композитного
+									складу деревини та інших
+									стабілізуючих речовин. Залежно від виробника та
+									типів композитної терасної дошки, додатковими речовинами бувають: поліетилен, ПВХ, поліуретанові
+									смоли,
+									різні адитиви
+									тощо. Пропорція в складі дерево/додаткові речовини може бути різною.
+									Така комбінація робить композитну терасну дошку стабільною та стійкою до впливу зовнішніх факторів, а
+									головне, така
+									дошка не потребує особливого догляду та служить десятки років.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="type__item-subtitle">Композитна терасна дошка</div>
 						</div>
 						<div class="type__item">
-							<div class="type__item-img">
-								<img src="./images/type2.jpg" alt="">
+							<img class="type__item-img" src="./images/type2.jpg" alt="">
+							<h3 class="type__item-subtitle hidden-title">Терасна дошка з натуральної деревини</h3>
+							<div class="type__item-text hidden content">
+								<h4>Терасна дошка з натуральної деревини</h4>
+								<p>Асортимент порід, з яких виробляють
+									терасну дошку,
+									досить об’ємний. Зазвичай це сосна, модрина, ясен, акація; також
+									екзотичні і більш стійкі: мербау, меранті тік, грап та інші.
+									Також буває термована терасна дошка (найчастіше ясен) - термо-ясен. Це більш стабільна дошка в
+									порівняні
+									зі звичайною,
+									адже проходить спеціальну процедуру у спеціалізованих печах. Вони прогрівають дошку та прибирають
+									ризики, пов’язані з
+									гниттям та псуванням через вплив зовнішніх факторів.
+									Терасна дошка з натуральної деревини відрізняється своєю натуральною красою та неповторністю живого
+									малюнку. Але
+									потребує догляду, щоправда, залежно від породи, ступінь та частота догляду відрізняється.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="type__item-subtitle">Терасна дошка з натуральної деревини</div>
 						</div>
 					</div>
 				</div>
@@ -294,16 +324,22 @@
 					<div class="slider__inner swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide slider__item">
-								<img src="./images/services1.jpg" alt="" class="slider__item-img">
+								<img src="./images/slider1.jpg" alt="" class="slider__item-img">
 							</div>
 							<div class="swiper-slide slider__item">
-								<img src="./images/services2.jpg" alt="" class="slider__item-img">
+								<img src="./images/slider2.jpg" alt="" class="slider__item-img">
 							</div>
 							<div class="swiper-slide slider__item">
-								<img src="./images/services3.jpg" alt="" class="slider__item-img">
+								<img src="./images/slider3.jpg" alt="" class="slider__item-img">
 							</div>
 							<div class="swiper-slide slider__item">
-								<img src="./images/services4.jpg" alt="" class="slider__item-img">
+								<img src="./images/slider4.jpg" alt="" class="slider__item-img">
+							</div>
+							<div class="swiper-slide slider__item">
+								<img src="./images/slider5.jpg" alt="" class="slider__item-img">
+							</div>
+							<div class="swiper-slide slider__item">
+								<img src="./images/slider6.jpg" alt="" class="slider__item-img">
 							</div>
 						</div>
 
@@ -323,66 +359,125 @@
 					<h3 class="services__title title">ДОДАТКОВІ ПОСЛУГИ</h3>
 					<div class="services__inner">
 						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services1.jpg" alt="">
+							<img class="services__item-img" src="./images/services1.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Рулонний газон</h3>
+							<div class="services__item-text hidden content">
+								<h4>Рулонний газон</h4>
+								<p>Найкращий спосіб облаштування натурального газону. Його вже дбайливо підготували за вас, а тому не
+									треба витрачати
+									багато часу та сил, щоб виростити газон з насіння. Рулонний газон абсолютно рівномірний, щільний та
+									ефектний.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="services__item-subtitle">Рулоний газон</div>
 						</div>
 						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services2.jpg" alt="">
+							<img class="services__item-img" src="./images/services2.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Перголи та навіси</h3>
+							<div class="services__item-text hidden content">
+								<h4>Перголи та навіси</h4>
+								<p>Перголи або навіси додають затишку та комфорту відпочинку на терасі. Дерев'яні або алюмінієві
+									перголи, маркізні ситеми
+									або навіси з металу завжди у нагоді в кожному дворі в негоду або прекрасну погоду.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="services__item-subtitle">Перговий навіс</div>
-						</div>
-					</div>
-					<div class="services__inner">
-						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services3.jpg" alt="">
-							</div>
-							<div class="services__item-subtitle">Штучний газон</div>
-						</div>
-						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services4.jpg" alt="">
-							</div>
-							<div class="services__item-subtitle">Автоматичний полив</div>
-						</div>
-					</div>
-					<div class="services__inner">
-						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services5.jpg" id="des" alt="">
-							</div>
-							<div class="services__item-subtitle">Ландшафтний дизайн</div>
 						</div>
 					</div>
 					<div class="services__inner">
 						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services6.jpg" alt="">
+							<img class="services__item-img" src="./images/services3.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Штучний газон</h3>
+							<div class="services__item-text hidden content">
+								<h4>Штучний газон</h4>
+								<p>Легкий спосіб закрити ділянку зеленим газоном і не турбуватися про догляд. Це економить час та кошти
+									при догляді за
+									садом.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="services__item-subtitle">Лазні</div>
 						</div>
 						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services7.jpg" alt="">
+							<img class="services__item-img" src="./images/services4.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Системи автоматичного поливу</h3>
+							<div class="services__item-text hidden content">
+								<h4>Системи автоматичного поливу</h4>
+								<p>Правильно розрахована та влаштована система поливу стане незамінним помічником у догляді за садом.
+									Автоматична система
+									поливу зробить одну з найважливіших речей у саді без участі господарів.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="services__item-subtitle">Огорожі</div>
 						</div>
 					</div>
 					<div class="services__inner">
 						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services8.jpg" alt="">
+							<img class="services__item-img" src="./images/services5.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Ландшафтний дизайн</h3>
+							<div class="services__item-text hidden content">
+								<h4>Ландшафтний дизайн</h4>
+								<p>Це необхідність, що стає запорукою успіху під час створення ділянки вашої мрії. Наша команда допоможе
+									зробити зручне
+									зонування та технічно правильно облаштує його з урахуванням будівельних норм. Також ми допоможемо з
+									вибором рослин,
+									оздоблювальних матеріалів для ділянки, підготуємо креслення та візуалізацію. І, що важливо, врахуємо
+									особливості, обрані
+									вами під час створення стилю будинку та поєднаємо дім із садом в єдину композицію.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="services__item-subtitle">Обслуговування</div>
+						</div>
+					</div>
+					<div class="services__inner">
+						<div class="services__item">
+							<img class="services__item-img" src="./images/services6.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Лазні</h3>
+							<div class="services__item-text hidden content">
+								<h4>Лазні</h4>
+								<p>Як обрати та встановити піч, як облаштувати приміщеня в парній, як оздобити деревом та зробити
+									відпочинок у лазні
+									незабутнім? Зробимо це для вас і за вас. Готуйте вінички!
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
+							</div>
 						</div>
 						<div class="services__item">
-							<div class="services__item-img">
-								<img src="./images/services9.jpg" alt="">
+							<img class="services__item-img" src="./images/services7.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Огорожі</h3>
+							<div class="services__item-text hidden content">
+								<h4>Огорожі</h4>
+								<p>Декоративні огорожі завжди у нагоді, коли треба облаштувати сходи або огородити терасу, зробити
+									розмежування на ділянці
+									тощо. Виконуємо огорожі з дерева або з композитного матеріалу.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
 							</div>
-							<div class="services__item-subtitle">Розробка проекту ділянки та візуалізація</div>
+						</div>
+					</div>
+					<div class="services__inner">
+						<div class="services__item">
+							<img class="services__item-img" src="./images/services8.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Обслуговування терас</h3>
+							<div class="services__item-text hidden content">
+								<h4>Обслуговування терас</h4>
+								<p>Тераса з натуральної деревини вимагає певного догляду, аби слугувати довго. Наша команда оновить
+									терасу до її первинного
+									стану. Маємо великий вибір масел та знаємо, як правильно надати терасі нового життя.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
+							</div>
+						</div>
+						<div class="services__item">
+							<img class="services__item-img" src="./images/services9.jpg" alt="">
+							<h3 class="services__item-subtitle hidden-title">Розробка проєкту ділянки та візуалізації</h3>
+							<div class="services__item-text hidden content">
+								<h4>Розробка проєкту ділянки та візуалізації</h4>
+								<p>Побачити завчасно, як буде виглядати ділянка і не покладатися на вдачу - ознака професійного підходу.
+									Візуалізація
+									виключає непорозуміння у планування проєкту і гарантує очікуваний результат.
+								</p>
+								<a href="#call" class="btn hidden-btn">Докладніше</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -395,12 +490,10 @@
 						<p class="call__subtitle">для детального прорахунку та консультації</p>
 						<div class="call__content">
 							<form class="call__form-container" action="#">
-								<div class="call__form-content">
-									<input type="text" placeholder="Ім’я" name="uname" required>
-									<input type="number" placeholder="Телефон" name="psw" required>
-								</div>
+								<input type="text" placeholder="Ім’я" name="uname" required>
+								<input type="number" placeholder="Телефон" name="psw" required>
 								<p>або телефонуйте +38051509505</p>
-								<button class="call__form-btn btn" type="submit">Замовити консультацію</button>
+								<button class="call__form-btn my-button btn" type="submit">Замовити консультацію</button>
 							</form>
 						</div>
 					</div>
@@ -434,17 +527,17 @@
 					</nav>
 					<ul class="social">
 						<li class="social__list-item">
-							<a href="#" class="social__link">
+							<a href="#" target="_blank" class="social__link">
 								<img src="./images/facebook.png" alt="facebook" class="social__img">
 							</a>
 						</li>
 						<li class="social__list-item">
-							<a href="#" class="social__link">
+							<a href="https://instagram.com/backyard_db?igshid=MzRlODBiNWFlZA==" target="_blank" class="social__link">
 								<img src="./images/insta.png" alt="instagram" class="social__img">
 							</a>
 						</li>
 						<li class="social__list-item">
-							<a href="#" class="social__link">
+							<a href="https://t.me/Mykola_Serhiienko" target="_blank" class="social__link">
 								<img src="./images/telegram.png" alt="telegram" class="social__img">
 							</a>
 						</li>
