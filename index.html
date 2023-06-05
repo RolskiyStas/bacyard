@@ -131,12 +131,12 @@
 					<div class="container">
 						<div class="departure__title title">Приїду безкоштовно на ваш об’єкт</div>
 						<div class="departure__inner">
-							<form class="departure__form" action="#">
+							<form id="form_1" class="departure__form" action="#">
 								<p class="departure__form-text">для детального прорахунку та консультації</p>
 								<div class="departure__form-container">
 									<input class="departure__form-input" type="text" placeholder="Ім’я" name="uname" required>
-									<input class="departure__form-input" type="number" placeholder="Телефон" name="psw" required>
-									<button class="departure__form-btn my-button btn" type="button">Докладніше</button>
+									<input class="departure__form-input" type="number" placeholder="Телефон" name="number" required>
+									<button class="departure__form-btn my-button btn" type="submit">Докладніше</button>
 								</div>
 							</form>
 						</div>
@@ -215,7 +215,7 @@
 							</div>
 							<div class="calc__form-item">
 								<label for="fphone">Телефон</label>
-								<input class="calc__form-phone" type="number" id="phoneInput">
+								<input class="calc__form-phone" type="number" name="number" id="phoneInput">
 								<button class="calc__form-btn btn" type="button" onclick="calculate()">Розрахувати</button>
 							</div>
 						</div>
@@ -497,10 +497,10 @@
 						<h3 class="call__title title">ВИЇЗД НА ОБ’ЄКТ БЕЗКОШТОВНО</h3>
 						<p class="call__subtitle">для детального прорахунку та консультації</p>
 						<div class="call__content">
-							<form class="call__form-container" action="#">
+							<form id="form_2" class="call__form-container" action="#">
 								<input class="call-input" type="text" placeholder="Ім’я" name="uname" required>
 								<input class="call-input" type="number" placeholder="Телефон" name="number" required>
-								<button class="call__form-btn my-button btn" type="button">Замовити консультацію</button>
+								<button class="call__form-btn my-button btn" type="submit">Замовити консультацію</button>
 							</form>
 							<p>або телефонуйте <a href="tel:+380501509505">+380501509505</a></p>
 						</div>
@@ -559,6 +559,7 @@
 		</footer>
 
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
